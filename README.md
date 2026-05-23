@@ -88,4 +88,4 @@ O servidor estará rodando na porta **3333**. Você pode acessar e testar a API 
 
 ---
 
-Desenvolvido por [Thales Granja](https://www.google.com/search?q=https://github.com/thalesgranja).
+Desenvolvido por [Thales Granja](https://github.com/thalesgranja).
