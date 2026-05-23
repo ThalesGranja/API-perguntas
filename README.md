@@ -25,7 +25,8 @@ Primeiro, faça o clone do projeto e acesse a pasta raiz:
 
 ```bash
 git clone [https://github.com/ThalesGranja/API-perguntas.git](https://github.com/ThalesGranja/API-perguntas.git)
-cd nome-do-seu-repositorio
+
+cd API-perguntas
 ```
 
 Em seguida, instale as dependências do projeto:
@@ -58,6 +59,7 @@ Com o banco de dados rodando e o arquivo `.env` configurado, sincronize a estrut
 
 ```bash
 npx prisma migrate dev
+
 npx prisma db seed
 ```
 
