@@ -1,0 +1,232 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ORM
+meta:
+  id: wrk_d26f3dd8a21e44e783c50b01a25444c1
+  created: 1779386563330
+  modified: 1779386563330
+  description: ""
+collection:
+  - name: Users
+    meta:
+      id: fld_e2e2b8d277924a7da2ca55cb5a6f6caf
+      created: 1779386573612
+      modified: 1779386573612
+      sortKey: -1779386573612
+      description: ""
+    children:
+      - url: http://localhost:3333/users
+        name: Create
+        meta:
+          id: req_803a0e8624c341f5bc09d73e0f8c27b9
+          created: 1779386576302
+          modified: 1779560534687
+          isPrivate: false
+          description: ""
+          sortKey: -1779386576302
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Matheus Madureira",
+            	"email": "matheusmadureira@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/users
+        name: Index
+        meta:
+          id: req_d3534e64c9c8426ebaf9b249bc316d48
+          created: 1779467756577
+          modified: 1779560517328
+          isPrivate: false
+          description: ""
+          sortKey: -1779467756577
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/users/8f68ee62-f17a-453b-89f4-938e8f8516b1
+        name: Show
+        meta:
+          id: req_d4def7b44f7d4aabaa0db6b1f8175431
+          created: 1779467904180
+          modified: 1779467920379
+          isPrivate: false
+          description: ""
+          sortKey: -1779427166439.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Questions
+    meta:
+      id: fld_e30628c4be484b8981d1c40c27ca2810
+      created: 1779557048346
+      modified: 1779557048346
+      sortKey: -1779557048346
+      description: ""
+    children:
+      - url: http://localhost:3333/questions
+        name: Create
+        meta:
+          id: req_f7a34bacbfb5468ab0ad9448471fb43b
+          created: 1779557083914
+          modified: 1779560777683
+          isPrivate: false
+          description: ""
+          sortKey: -1779557083914
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title": "Node.js",
+            	"content": "Como criar uma API",
+            	"user_id": "8f68ee62-f17a-453b-89f4-938e8f8516b1"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions
+        name: Index
+        meta:
+          id: req_c857d3faf67e42e690c13b382c8782aa
+          created: 1779560782397
+          modified: 1779561073624
+          isPrivate: false
+          description: ""
+          sortKey: -1779512420245.5
+        method: GET
+        parameters:
+          - name: title
+            value: ""
+            description: ""
+            disabled: true
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions/fd3c532b-4b0f-4fa7-97f2-a8a9f45d89fe
+        name: Update
+        meta:
+          id: req_24243cd45ea34a42ab7afdbe46628ad5
+          created: 1779561097590
+          modified: 1779561214796
+          isPrivate: false
+          description: ""
+          sortKey: -1779534752079.75
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title": "Prisma",
+            	"content": "Como inserir no db com Prisma?"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/questions/fd3c532b-4b0f-4fa7-97f2-a8a9f45d89fe
+        name: Remove
+        meta:
+          id: req_1d3dd290e0004e8c9631510e7d8c9c89
+          created: 1779561548062
+          modified: 1779561556918
+          isPrivate: false
+          description: ""
+          sortKey: -1779523586162.625
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_894cf3ba2751191768adb373947455a78a2f8442
+    created: 1779386563336
+    modified: 1779386563336
+environments:
+  name: Base Environment
+  meta:
+    id: env_894cf3ba2751191768adb373947455a78a2f8442
+    created: 1779386563333
+    modified: 1779386563333
+    isPrivate: false
