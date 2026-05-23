@@ -24,7 +24,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 Primeiro, faça o clone do projeto e acesse a pasta raiz:
 
 ```bash
-git clone [https://github.com/thalesgranja/nome-do-seu-repositorio.git](https://github.com/thalesgranja/nome-do-seu-repositorio.git)
+git clone [https://github.com/ThalesGranja/API-perguntas.git](https://github.com/ThalesGranja/API-perguntas.git)
 cd nome-do-seu-repositorio
 ```
 
